@@ -26,7 +26,7 @@ export const store = createStore({
         const ob = state.memo[i]
         const isSame = ob.title == obj.title && ob.content == obj.content && ob.created == obj.created
         if (isSame) {
-          alert(`remove it! -- ${ob.title}`)
+          alert(`削除しました！ -- ${ob.title}`)
           state.memo.splice(i, 1)
           return
         }
